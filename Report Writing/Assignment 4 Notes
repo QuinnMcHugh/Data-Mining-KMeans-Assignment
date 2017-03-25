@@ -1,0 +1,4 @@
+Assignment 4 Notes
+-When implementing randomPopulate() inside the TwoDimRecord class, I opted to randomly create points bound between [0, 2). My reasoning behind this was that after surveying the data via plots, no wider range would be necessary. 
+
+-Instead of devising a formal method of determining when the centroids had settled, through empirical observation I found that choosing a high number of cluster reformations sufficed. This required me to write less code, and I settled on 50 as the number of iterations to form clusters over. 
