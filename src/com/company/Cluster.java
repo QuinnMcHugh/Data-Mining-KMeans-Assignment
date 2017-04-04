@@ -20,4 +20,15 @@ public abstract class Cluster {
 
     // This is the one DataRecord implementation dependent record
     public abstract void computeNewCentroid();
+
+    public double computeSSE(){
+        double result = 0;
+
+        SimilarityMetric metric = new SimilarityMetric(SimilarityMetric.MetricType.EUCLIDEAN);
+        for (DataRecord dr : records){
+            result += Math.pow(metric.calculate(centroid.toVector(), dr.toVector()), 2);
+        }
+
+        return result;
+    }
 }

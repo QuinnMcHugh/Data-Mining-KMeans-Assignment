@@ -19,7 +19,7 @@ public class TwoDimDataFrame implements DataFrame {
 			data.x1 = Double.parseDouble(csvRecords.get(i).get("X.1").trim());
 			data.x2 = Double.parseDouble(csvRecords.get(i).get("X.2").trim());
 			data.clusterClass = csvRecords.get(i).get("cluster").trim();
-			data.ID = i + 1;
+			data.ID = Integer.parseInt(csvRecords.get(i).get("ID").trim());
 			
 			records.add(data);
 		}

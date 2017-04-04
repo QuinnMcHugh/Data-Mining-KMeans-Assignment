@@ -29,7 +29,7 @@ public class TwoDimRecord implements DataRecord {
 	public void randomPopulate(){
 		// After observing the provided 2 Dim data, I decided the range
 		// [0, 2) to be fine for randomly populating
-		x1 = Math.random() * 2;
-		x2 = Math.random() * 2;
+		x1 = Math.random() * 1;
+		x2 = Math.random() * 1;
 	}
 }

@@ -1,0 +1,3 @@
+README - Assignment 4 - by Quinn McHugh
+
+This directory should be Eclipse-compatible. The Main.java file will allow the user to control input and output from the program, as well as tune the k values being used in the clustering of each dataset. The three input datasets should be placed within the input/ directory. Output from the program will be found in the out/ directory in the specified csv format. 
